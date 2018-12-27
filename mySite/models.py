@@ -50,12 +50,11 @@ class SujetEvaluation(models.Model):
 # Classe Filiere
 class Filiere(models.Model):
     FILIERE_CHOICES=(
-        ('GEO','Géographe'),
-        ('HIS','Histoire'),
+        ('CHI','Chimie'),
+        ('BIO','Biologie'),
         ('INF','Informatique'),
         ('MAT','Mathématiques'),
-        ('DRT','Droit'),
-        ('LIT','Littérature et Langue'),
+        ('PHY','Physique'),
     )
     codeFiliere=models.IntegerField()
     filiere=models.CharField(max_length=1, choices=FILIERE_CHOICES)
